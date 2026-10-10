@@ -42,15 +42,15 @@ Edit array `products` di bagian `STORE`. Setiap produk berisi:
 - `description`: deskripsi singkat produk.
 - `art`: teks dekoratif pada gambar produk.
 
-Produk yang saat ini ditampilkan adalah **contoh/demo**, bukan daftar produk asli. Ganti dengan nama, harga, deskripsi, dan materi produk milik AMD sebelum menerima pesanan sungguhan. Untuk memakai foto produk asli, bagian gambar kartu produk dapat disesuaikan untuk memuat URL atau file gambar.
+Produk yang saat ini ditampilkan adalah **contoh/demo**, bukan daftar produk asli. Katalog sengaja dikosongkan sampai kamu memberikan daftar produk asli. Tambahkan nama, harga, deskripsi, kategori, dan materi produk milik AMD sebelum menerima pesanan sungguhan. Untuk memakai foto produk asli, bagian gambar kartu produk dapat disesuaikan untuk memuat URL atau file gambar.
 
 ### 3. Publikasikan dengan GitHub Pages
 
 1. Buka **Settings** pada repositori GitHub.
 2. Masuk ke **Pages**.
-3. Pada bagian **Build and deployment**, pilih **Deploy from a branch**.
-4. Pilih branch `main` dan folder `/ (root)`, lalu simpan.
-5. Tunggu proses deployment selesai dan buka URL GitHub Pages yang ditampilkan di halaman Pages.
+3. Pada bagian **Build and deployment**, pilih **GitHub Actions** sebagai source.
+4. Simpan pengaturan. File workflow `.github/workflows/pages.yml` sudah ditambahkan untuk membangun dan menerbitkan situs setiap ada push ke branch `main`.
+5. Buka tab **Actions** untuk memeriksa status deployment. Setelah berhasil, buka URL GitHub Pages yang ditampilkan di **Settings → Pages**.
 
 ## Catatan
 
