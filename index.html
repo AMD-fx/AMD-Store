@@ -56,11 +56,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--muted);
    Format nomor WhatsApp: kode negara + nomor tanpa tanda +, spasi, atau strip. Contoh: 6281234567890 */
 const STORE = {
   whatsappNumber: "628xxxxxxxxxx",
-  products: [
-    {id:"preset-01",name:"AMD Preset Starter",category:"preset",price:15000,description:"Preset digital untuk membantu alur editing foto.",art:"PRESET"},
-    {id:"aset-01",name:"AMD Creative Assets",category:"aset",price:20000,description:"Kumpulan aset digital untuk kebutuhan desain.",art:"ASSETS"},
-    {id:"font-01",name:"AMD Display Font",category:"font",price:18000,description:"Font display untuk judul dan karya kreatif.",art:"Aa"}
-  ]
+  products: [] // Isi dengan produk asli AMD setelah nama, harga, deskripsi, dan materi produk tersedia
 };
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const rupiah=n=>new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
